@@ -8,7 +8,7 @@ const HelloWorld = artifacts.require("./HelloWorld.sol");
 contract('HelloWorld Contract Tests', function(accounts) {
 
 	let helloWorld;
-	const message = 'hello world!'
+	const message = 'hello world!';
 	const alice = accounts[0], bob = accounts[1];
 
 	it('should be deployed, HelloWorld', async () => {
