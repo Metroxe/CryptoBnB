@@ -1,0 +1,280 @@
+{
+  "contractName": "Property",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_msg",
+          "type": "uint256"
+        }
+      ],
+      "name": "hello",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_msg",
+          "type": "uint256"
+        }
+      ],
+      "name": "Hello",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipRenounced",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555033600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506104ad806100946000396000f3fe608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063715018a6146100675780638da5cb5b1461007e578063b0f0c96a146100d5578063f2fde38b14610110575b600080fd5b34801561007357600080fd5b5061007c610161565b005b34801561008a57600080fd5b50610093610264565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100e157600080fd5b5061010e600480360360208110156100f857600080fd5b8101908080359060200190929190505050610289565b005b34801561011c57600080fd5b5061015f6004803603602081101561013357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061031f565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101bd57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482060405160405180910390a260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102e557600080fd5b7f775a94827b8fd9b519d36cd827093c664f93347070a554f65e4a6f56cd738898816040518082815260200191505060405180910390a150565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561037b57600080fd5b61038481610387565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156103c357600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a723058205c3990f4b824d316a0f9afbfa2fc410d5fe5568e46fc5971571938380763c1f30029",
+  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063715018a6146100675780638da5cb5b1461007e578063b0f0c96a146100d5578063f2fde38b14610110575b600080fd5b34801561007357600080fd5b5061007c610161565b005b34801561008a57600080fd5b50610093610264565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100e157600080fd5b5061010e600480360360208110156100f857600080fd5b8101908080359060200190929190505050610289565b005b34801561011c57600080fd5b5061015f6004803603602081101561013357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061031f565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101bd57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482060405160405180910390a260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102e557600080fd5b7f775a94827b8fd9b519d36cd827093c664f93347070a554f65e4a6f56cd738898816040518082815260200191505060405180910390a150565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561037b57600080fd5b61038481610387565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156103c357600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a723058205c3990f4b824d316a0f9afbfa2fc410d5fe5568e46fc5971571938380763c1f30029",
+  "sourceMap": "53:36:2:-;;;574:10:3;566:5;;:18;;;;;;;;;;;;;;;;;;213:10:0;205:5;;:18;;;;;;;;;;;;;;;;;;53:36:2;;;;;;",
+  "deployedSourceMap": "53:36:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1000:111:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1000:111:3;;;;;;237:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;237:20:3;;;;;;;;;;;;;;;;;;;;;;;;;;;538:101:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;538:101:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;538:101:0;;;;;;;;;;;;;;;;;;;;1273:103:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1273:103:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1273:103:3;;;;;;;;;;;;;;;;;;;;;;1000:111;399:5:0;;;;;;;;;;;385:19;;:10;:19;;;377:28;;;;;;;;1076:5:3;;;;;;;;;;;1057:25;;;;;;;;;;;;1104:1;1088:5;;:18;;;;;;;;;;;;;;;;;;1000:111::o;237:20::-;;;;;;;;;;;;;:::o;538:101:0:-;399:5;;;;;;;;;;;385:19;;:10;:19;;;377:28;;;;;;;;601:11;607:4;601:11;;;;;;;;;;;;;;;;;;538:101;:::o;1273:103:3:-;399:5:0;;;;;;;;;;;385:19;;:10;:19;;;377:28;;;;;;;;1342:29:3;1361:9;1342:18;:29::i;:::-;1273:103;:::o;1511:171::-;1602:1;1581:23;;:9;:23;;;;1573:32;;;;;;;;1644:9;1616:38;;1637:5;;;;;;;;;;;1616:38;;;;;;;;;;;;1668:9;1660:5;;:17;;;;;;;;;;;;;;;;;;1511:171;:::o",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"./HelloWorld.sol\";\n\ncontract Property is HelloWorld {\n\n}",
+  "sourcePath": "/Users/christopherpowroznik/Documents/Projects/ethereum-airbnb/contracts/Property.sol",
+  "ast": {
+    "absolutePath": "/Users/christopherpowroznik/Documents/Projects/ethereum-airbnb/contracts/Property.sol",
+    "exportedSymbols": {
+      "Property": [
+        106
+      ]
+    },
+    "id": 107,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 102,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "absolutePath": "/Users/christopherpowroznik/Documents/Projects/ethereum-airbnb/contracts/HelloWorld.sol",
+        "file": "./HelloWorld.sol",
+        "id": 103,
+        "nodeType": "ImportDirective",
+        "scope": 107,
+        "sourceUnit": 44,
+        "src": "25:26:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 104,
+              "name": "HelloWorld",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 43,
+              "src": "74:10:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HelloWorld_$43",
+                "typeString": "contract HelloWorld"
+              }
+            },
+            "id": 105,
+            "nodeType": "InheritanceSpecifier",
+            "src": "74:10:2"
+          }
+        ],
+        "contractDependencies": [
+          43,
+          192
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 106,
+        "linearizedBaseContracts": [
+          106,
+          43,
+          192
+        ],
+        "name": "Property",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 107,
+        "src": "53:36:2"
+      }
+    ],
+    "src": "0:89:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/christopherpowroznik/Documents/Projects/ethereum-airbnb/contracts/Property.sol",
+    "exportedSymbols": {
+      "Property": [
+        106
+      ]
+    },
+    "id": 107,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 102,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "absolutePath": "/Users/christopherpowroznik/Documents/Projects/ethereum-airbnb/contracts/HelloWorld.sol",
+        "file": "./HelloWorld.sol",
+        "id": 103,
+        "nodeType": "ImportDirective",
+        "scope": 107,
+        "sourceUnit": 44,
+        "src": "25:26:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 104,
+              "name": "HelloWorld",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 43,
+              "src": "74:10:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HelloWorld_$43",
+                "typeString": "contract HelloWorld"
+              }
+            },
+            "id": 105,
+            "nodeType": "InheritanceSpecifier",
+            "src": "74:10:2"
+          }
+        ],
+        "contractDependencies": [
+          43,
+          192
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 106,
+        "linearizedBaseContracts": [
+          106,
+          43,
+          192
+        ],
+        "name": "Property",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 107,
+        "src": "53:36:2"
+      }
+    ],
+    "src": "0:89:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-03-07T04:08:21.339Z",
+  "devdoc": {
+    "methods": {
+      "renounceOwnership()": {
+        "details": "Allows the current owner to relinquish control of the contract."
+      },
+      "transferOwnership(address)": {
+        "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+        "params": {
+          "_newOwner": "The address to transfer ownership to."
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "renounceOwnership()": {
+        "notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+      }
+    }
+  }
+}
